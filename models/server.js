@@ -56,12 +56,12 @@ class Server {
     // Directorio Público
    // this.app.use(express.static("public"));
 
-    this.app.use(fileUpload({
+    /*this.app.use(fileUpload({
       useTempFiles: true,
       tempFileDir: '/tmp/',
       createParentPath: true
     }));
-  }
+  }*/
 
   routes() {
     this.app.use(this.paths.auth, require("../routes/auth"));
