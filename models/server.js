@@ -60,8 +60,8 @@ class Server {
       useTempFiles: true,
       tempFileDir: '/tmp/',
       createParentPath: true
-    }));
-  }*/
+    }));*/
+  }
 
   routes() {
     this.app.use(this.paths.auth, require("../routes/auth"));
